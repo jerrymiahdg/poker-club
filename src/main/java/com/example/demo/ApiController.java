@@ -10,8 +10,6 @@ public class ApiController {
     @GetMapping(value = "/users", produces = "application/json")
     public String getUsers() {
         new User("kingbebop15@gmail.com", "password", "Jeremiah");
-        new User("kingbebop15@gmail.com", "password", "Jeremiah");
-        new User("kingbebop15@gmail.com", "password", "Jeremiah");
 
         return User.stringify();
     }
