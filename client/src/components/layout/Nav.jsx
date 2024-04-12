@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../App";
 import { useNavigate } from "react-router-dom";
+import Logo from "../../assets/logo";
 
 const Nav = () => {
   const ctx = useContext(Context);
@@ -24,7 +25,7 @@ const Nav = () => {
           to="/"
           className="font-bold text-5xl bg-gradient-to-b from-neutral-400 to-neutral-800 inline-block text-transparent bg-clip-text"
         >
-          MHS Poker Club
+          {ctx.width > 700 ? "MHS Poker Club" : <Logo />}
         </Link>
         <div className="flex gap-5">
           {ctx.isLoggedIn ? (

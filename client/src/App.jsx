@@ -11,6 +11,9 @@ export const Context = createContext();
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  window.addEventListener("resize", () => setWidth(window.innerWidth));
 
   useEffect(() => {
     fetch("http://localhost:3000/auth/is-logged-in", {
@@ -21,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Context.Provider value={{ isLoggedIn, setIsLoggedIn }}>
+      <Context.Provider value={{ isLoggedIn, setIsLoggedIn, width }}>
         <Nav />
         <Routes>
           <Route path="/signup" element={<Signup />} />
