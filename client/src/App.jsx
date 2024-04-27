@@ -6,6 +6,7 @@ import Nav from "./components/layout/Nav";
 import { Route, Routes } from "react-router-dom";
 import Signup from "./components/pages/Signup";
 import Login from "./components/pages/Login";
+import Learn from "./components/pages/Learn";
 
 export const Context = createContext();
 
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/learn" element={<Learn />} />
         </Routes>
       </Context.Provider>
     </>

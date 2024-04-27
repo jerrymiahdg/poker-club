@@ -25,9 +25,24 @@ const Nav = () => {
           to="/"
           className="font-bold text-5xl bg-gradient-to-b from-neutral-400 to-neutral-800 inline-block text-transparent bg-clip-text"
         >
-          {ctx.width > 700 ? "MHS Poker Club" : <Logo />}
+          {ctx.width > 950 ? "MHS Poker Club" : <Logo />}
         </Link>
         <div className="flex gap-5">
+          <Link to="/learn" className="text-lg">
+            <div className="p-2 text-lg bg-transparent rounded-md transition-all hover:bg-neutral-100 ">
+              Learn
+            </div>
+          </Link>
+          <Link to="/standings" className="text-lg">
+            <div className="p-2 text-lg bg-transparent rounded-md transition-all hover:bg-neutral-100 ">
+              Standings
+            </div>
+          </Link>
+          <Link to="/about" className="text-lg">
+            <div className="p-2 text-lg bg-transparent rounded-md transition-all hover:bg-neutral-100 ">
+              About
+            </div>
+          </Link>
           {ctx.isLoggedIn ? (
             <>
               <button
