@@ -1,4 +1,4 @@
-# At the MHS Poker Club, we play **Texas Hold'em** poker
+# At the MHS Poker Club, we play Texas Hold'em poker
 
 Texas Hold’em is the most popular version of poker. It was started in, of course, the US state of Texas in Robstown, TX in the early 20th century. It was later introduced to Las Vegas in 1963.
 

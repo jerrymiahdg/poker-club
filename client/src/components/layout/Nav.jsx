@@ -24,12 +24,12 @@ const Nav = () => {
   return (
     <>
       <div className="flex justify-center w-full border-b border-neutral-100">
-        <div className="flex max-w-5xl w-full justify-between gap-5 p-5  items-center">
+        <div className="flex max-w-7xl w-full justify-between gap-5 p-2  items-center">
           <Link
             to="/"
-            className="font-bold text-5xl bg-gradient-to-b from-neutral-400 to-neutral-800 inline-block text-transparent bg-clip-text"
+            className="font-bold text-6xl bg-gradient-to-b from-neutral-400 to-neutral-800 inline-block text-transparent bg-clip-text"
           >
-            {ctx.width > 950 ? "MHS Poker Club" : <Logo />}
+            {ctx.width > 1050 ? "MHS Poker Club" : <Logo />}
           </Link>
           <div className="flex gap-5 items-center">
             {ctx.width > 600 ? (

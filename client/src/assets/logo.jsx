@@ -1,6 +1,6 @@
 const Logo = () => (
   <svg
-    className="w-12 h-12"
+    className="w-[60px] h-[60px]"
     version="1.1"
     id="Capa_1"
     xmlns="http://www.w3.org/2000/svg"

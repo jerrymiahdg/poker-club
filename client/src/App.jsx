@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Signup from "./components/pages/Signup";
 import Login from "./components/pages/Login";
 import Learn from "./components/pages/Learn";
+import Standings from "./components/pages/Standings";
 
 export const Context = createContext();
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/learn" element={<Learn />} />
+          <Route path="/standings" element={<Standings />} />
         </Routes>
       </Context.Provider>
     </>
